@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>トーラム野良ペット計算</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>トーラム マイルーム野良ペット計算</h1>
+
+  <div class="form-group">
+    <label for="petCount">ペット数（13 / 14 / 15）</label>
+    <select id="petCount">
+      <option value="13">13種類（通常）</option>
+      <option value="14">14種類（ゲルミ追加時）</option>
+      <option value="15">15種類（レム・ラム追加時）</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="targetDate">計算対象の日付</label>
+    <input type="date" id="targetDate">
+  </div>
+
+  <div class="form-group">
+    <label for="targetHour">時間（0〜23、1時間刻み）</label>
+    <input type="number" id="targetHour" min="0" max="23" value="0">
+  </div>
+
+  <button id="calcBtn">計算する</button>
+
+  <div id="result">ここに結果が表示されます</div>
+
+  <p class="note">
+    ※ 記事に記載された計算式と定数のみを使用しています。<br>
+    ※ 分・秒は切り捨てて時間単位で計算します。<br>
+    ※ ペット名は記事本文で明示されているもののみ表示します。
+  </p>
+
+  <script src="js/pet-13.js"></script>
+  <script src="js/pet-14.js"></script>
+  <script src="js/pet-15.js"></script>
+  <script src="js/constants.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+const PET_CONFIG = {
+  13: PET_CONFIG_13,
+  14: PET_CONFIG_14,
+  15: PET_CONFIG_15
+};
